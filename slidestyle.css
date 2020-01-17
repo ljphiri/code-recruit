@@ -1,0 +1,468 @@
+
+
+    .banner1,.banner2,.banner3,.banner4{
+        height:100vh;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    img {
+        width: 120%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        animation: zoom-out 3s linear infinite;
+    }
+
+    @keyframes zoom-out{
+        100%{
+            width: 100%;
+        }
+    }
+    .text-box{
+        width: 900px ;
+        position: relative;
+        top: 200px;
+        left: 100px;
+        color:gainsboro;
+        animation: textup 12s linear infinite;
+        transform: translateY(100px);
+    }
+    @keyframes textup {
+        10%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(0px);
+        }
+        }
+
+        .text-box1{
+            animation-delay: 0s;
+        }
+        .text-box2{
+            animation-delay: 3s;
+        }
+        .text-box3{
+            animation-delay: 6s;
+        }
+        .text-box4{
+            animation-delay: 9s;
+        }
+    
+    .text-box h1{
+        margin-bottom: 40px;
+        font-size: 50px;
+    }
+    .text-box p{
+        font-size: 25px;
+        line-height: 30px;
+        margin-top: 80px;
+    }
+    .text-box span {
+        background: red;
+        height: 1px;
+        width: 100px;
+        position: absolute;
+        left: 0;
+    }
+
+    .banner1{
+        animation: slide1 12s linear infinite;
+    }
+    .banner2{
+        animation: slide2 12s linear infinite;
+    }
+    .banner3{
+        animation: slide3 12s linear infinite;
+    }
+    .banner4{
+        animation: slide4 12s linear infinite;
+    }
+    @keyframes slide1{
+        0%{
+            visibility: visible;
+        }
+        25%{visibility: hidden;
+        }
+        50%{
+            visibility: hidden;
+        }
+        75%{
+            visibility: hidden;
+        }
+        100%{
+            visibility: visible;
+        }
+    }
+    @keyframes slide2{
+        0%{
+            visibility: hidden;
+        }
+        25%{visibility: hidden;
+        }
+        50%{
+            visibility: visible;
+        }
+        75%{
+            visibility: hidden;
+        }
+        100%{
+            visibility: hidden;
+        }
+    }
+    @keyframes slide3{
+        0%{
+            visibility: hidden;
+        }
+        25%{visibility: hidden;
+        }
+        50%{
+            visibility: hidden;
+        }
+        75%{
+            visibility: visible;
+        }
+        100%{
+            visibility: hidden;
+        }
+    }
+    @keyframes slide4{
+        0%{
+            visibility: hidden;
+        }
+        25%{visibility: hidden;
+        }
+        50%{
+            visibility: hidden;
+        }
+        75%{
+            visibility: hidden;
+        }
+        100%{
+            visibility: visible;
+        }
+    }
+    .slide-container{
+        height: 50vh;
+        width: 100%;
+        float: left;
+        /* display: none; */
+    }
+
+    
+    /* div#slider 
+    { 
+        overflow: hidden;
+        margin-top: 10vh;
+        height: 50vh;
+        float: left;
+     }
+
+    div#slider figure img 
+    { width: 10%;
+    float: left;
+    height: 100%;
+ }
+
+    div#slider figure { 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 10s slidy infinite; 
+    } */
+
+    body {
+    background-color:gainsboro;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    /* overflow: hidden; */
+}
+
+.Navigation {
+    /* background-color: deepskyblue; */
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Navigation ul li {
+    display: inline-block;
+    list-style: none;
+    color: #fff;
+}
+
+.Navigation ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.Navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sub-menu-1 {
+    display: none;
+}
+
+.sub-menu-1 ul li {
+    display: block;
+    width: 200px;
+}
+
+.Navigation ul li:hover .sub-menu-1 {
+    display: block;
+    position: absolute;
+    background: darkslategray;
+    margin-top: 15px;
+    margin-left: 15px
+    
+}
+
+.active,
+.Navigation ul li:hover,
+.sub-menu-1 ul li {
+    background: darkslategray;
+    border-radius: 3px;
+}
+
+.sub-menu-2 {
+    display: none;
+}
+
+.sub-menu-2 ul li {
+    display: block;
+    width: 200px;
+}
+
+.Navigation ul li:hover .sub-menu-2 {
+    display: block;
+    position: absolute;
+    background: black;
+    margin-top: 15px;
+    margin-left: 15px
+}
+
+.active,
+.Navigation ul li:hover,
+.sub-menu-2 ul li {
+    background: black;
+    border-radius: 3px;
+}
+
+.sub-menu-3 {
+    display: none;
+}
+
+.sub-menu-3 ul li {
+    display: block;
+    width: 200px;
+}
+
+.Navigation ul li:hover .sub-menu-3 {
+    display: block;
+    position: absolute;
+    background: darkslategray;
+    margin-top: 15px;
+    margin-left: 15px
+}
+
+.active,
+.Navigation ul li:hover,
+.sub-menu-3 ul li {
+    background: black;
+    border-radius: 3px;
+}
+
+.form-group {
+    width: 30%;
+    height: 20%;
+    float: right;
+}
+
+.form-group button {
+    background-color:black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30%;
+}
+
+#content button {
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30%;
+}
+
+.form-group input[type] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+/* .background-image {
+    width: 100%;
+    height: 100%; */
+
+.nav-form {
+  /* background-color: red; */
+    float: left;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    
+}
+.openslide {
+    float: left;
+    width: 100%;
+    position: absolute;
+    padding-top: 2%;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color:lightgrey;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    /* background-color: red; */
+    width: 20%;
+    float: left;
+    z-index: 100;
+    position: absolute;
+
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  .contact-form{
+    background-color: turquoise;
+    width: 20%;
+    float: right;
+    /* width: 85%;
+    max-width: 600px;
+    background: cornsilk;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding:30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align:center;
+    box-shadow: 0 0 20px #818181;
+    font-family: Arial, Helvetica, sans-serif; */
+
+}
+
+.contact-form h1{
+    margin-top: 0;
+    font-weight: 200;
+    font-size: 14px;
+}
+.txt-box{
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.txt-box label{
+    display: block;
+    text-align: left;
+    color: grey;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+
+.txt-box input,.txt-box textarea{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+.butn1,.butn2,.butn3,.butn4{
+    font-size: 20px;
+    cursor: pointer;
+    background-color:black;
+    color: white;
+    padding: 1px 5px;
+    border: none;
+}
+#mySidebar{
+    color: gainsboro;
+}
+@media only screen and 
+(max-width:600px){
+    body,.Navigation,.banner1,.banner2,.banner3,.banner4
+} 
